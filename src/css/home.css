@@ -766,8 +766,8 @@
         width: 45%;
     }
     #sbs-1206 .cs-ul {
-        width: 45%;
-        max-width: 15.125rem;
+        width: 100%;
+        /* max-width: 15.125rem; */
     }
     #sbs-1206 .cs-video-link {
         width: 50%;
