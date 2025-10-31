@@ -189,14 +189,15 @@
         font-size: 2rem;
         margin-top: 2rem;
     }
-    #content-page-1402 h3 {
+    #content-page-1402 h3,
+    #content-page-1402 h4 {
         font-size: 1.5rem;
         color: var(--primary);
     }
-    #content-page-1402 h4,
     #content-page-1402 h5,
     #content-page-1402 h6 {
         font-size: 1.25rem;
+        color: var(--headerColor);
     }
     #content-page-1402 .cs-button-solid {
         margin-bottom: 2rem;
@@ -235,7 +236,7 @@
         gap: 1rem;
     }
     #content-page-1402 ul li {
-        list-style: none;
+        list-style: disc;
         color: inherit;
         position: relative;
     }
@@ -272,7 +273,7 @@
         width: 100%;
         height: 100%;
         /* 32px - 48px */
-        border-radius: clamp(2rem, 4vw, 3rem);
+        border-radius: 1rem;
         /* clips the corners of the children around the border radius */
         overflow: hidden;
         /* makes it cover the parent dimensions */
@@ -295,7 +296,7 @@
         box-sizing: border-box;
         background-color: var(--primary);
         /* 48px - 80px */
-        border-radius: 2rem;
+        border-radius: 1rem;
         display: none;
         flex-direction: column;
         align-items: flex-start;
@@ -479,6 +480,10 @@
     .desktop-only {
         display: block;
     }
+    .desktop-only li {
+        list-style: disc;
+        color: var(--bodyTextColor);
+    }
 }
 /* Desktop - 1200px */
 @media only screen and (min-width: 75rem) {
@@ -569,6 +574,26 @@
         flex-direction: column;
         /* centers content horizontally, set to flex-start to left align */
         align-items: center;
+    }
+
+    #faq-254 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 32.625rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #faq-254 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 32.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
     }
 
     #faq-254 .cs-faq-group {
@@ -802,6 +827,7 @@
     }
     #services-563 .cs-text {
         margin-bottom: 1rem;
+        color: var(--bodyTextColor);
     }
     #services-563 .cs-text:last-of-type {
         margin-bottom: 2rem;
@@ -840,7 +866,8 @@
         justify-content: flex-start;
         /* push icon top the top so if the list item goes to two lines the icon stays at the top */
         align-items: flex-start;
-        gap: 1.25rem;
+        gap: 1.25rem;  
+        color: var(--bodyTextColor);
     }
     #services-563 .cs-icon {
         /* adds extra space between the icon and top of parent so it's more centered */
@@ -898,7 +925,7 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
-        border-radius: 5%;
+        border-radius: 1rem;
     }
 }
 /* Tablet - 768px */
