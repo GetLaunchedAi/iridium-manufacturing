@@ -823,7 +823,7 @@
     }
 
     #services-563 .cs-topper {
-        color: var(--headerColor);
+        /* color: var(--headerColor); */
     }
     #services-563 .cs-text {
         margin-bottom: 1rem;
