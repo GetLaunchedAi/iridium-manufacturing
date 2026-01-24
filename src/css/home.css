@@ -954,6 +954,121 @@
                                 
                                 
 /*-- -------------------------- -->
+<---     Industries Served       -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+  #industries-served {
+    text-align: center;
+    padding: var(--sectionPadding);
+    background-color: var(--bg-light);
+  }
+  #industries-served .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+  }
+  #industries-served .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    display: block;
+  }
+  #industries-served .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: center;
+    max-width: 46rem;
+    margin: 0 auto 1rem;
+    color: var(--text);
+  }
+  #industries-served .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: center;
+    width: 100%;
+    max-width: 41rem;
+    margin: 0 auto clamp(3rem, 6vw, 4rem);
+    color: var(--text-muted);
+  }
+  #industries-served .cs-card-group {
+    margin: 0 auto clamp(3rem, 6vw, 4rem);
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+  }
+  #industries-served .cs-item {
+    list-style: none;
+    grid-column: span 12;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    border-radius: 0.75rem;
+    background: #fff;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
+    text-align: left;
+  }
+  #industries-served .cs-item-icon {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0.75rem;
+  }
+  #industries-served .cs-item-title {
+    font-size: clamp(1.125rem, 2.2vw, 1.5rem);
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+    color: var(--text);
+  }
+  #industries-served .cs-item-p {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--text-muted);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+  #industries-served .cs-card-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #industries-served .cs-item {
+    grid-column: auto;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  #industries-served .cs-card-group {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #industries-served {
+    background-color: var(--medium);
+  }
+  body.dark-mode #industries-served .cs-item {
+    background-color: var(--dark);
+  }
+  body.dark-mode #industries-served .cs-item-title,
+  body.dark-mode #industries-served .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #industries-served .cs-item-p {
+    color: var(--bodyTextColorWhite);
+    opacity: 0.75;
+  }
+  body.dark-mode #industries-served .cs-item-icon {
+    filter: invert(1) brightness(1.1);
+  }
+}
+
+/*-- -------------------------- -->
 <---          Reviews           -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
@@ -1004,13 +1119,16 @@
     padding: 0;
     /* 48px - 64px */
     margin: 0 auto clamp(3rem, 5vw, 4rem);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(1rem, 2.5vw, 1.5rem);
   }
   #reviews .cs-item {
     text-align: left;
     list-style: none;
     width: 100%;
-    max-width: 33.875rem;
-    margin: 0 auto 4rem;
+    max-width: none;
+    margin: 0;
     /* Padding L & R - 16px - 32px */
     padding: 3.75rem clamp(1rem, 3.2vw, 2rem) 0;
     /* 32px - 40px */
@@ -1025,6 +1143,7 @@
     align-items: center;
     /* Prevents padding from affecting height & width */
     box-sizing: border-box;
+    grid-column: span 12;
   }
   #reviews .cs-item:last-of-type {
     margin-bottom: 0;
@@ -1047,7 +1166,7 @@
     font-size: 1rem;
     line-height: 1.5em;
     font-weight: 700;
-    width: 40%;
+    width: 70%;
     margin: 0 auto 0 0;
     display: block;
     color: var(--text-muted);
@@ -1066,14 +1185,16 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
   #reviews .cs-card-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
   }
   #reviews .cs-item {
-    /* reset margin so it won't interfere with flexbox */
-    margin: 0;
+    grid-column: auto;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  #reviews .cs-card-group {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

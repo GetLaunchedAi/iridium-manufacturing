@@ -970,6 +970,118 @@
     }
 }
 
+/*-- -------------------------- -->
+<---      Equipment List       -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #equipment-list {
+        padding: var(--sectionPadding);
+        background-color: #fff;
+    }
+    #equipment-list .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(2rem, 4vw, 3rem);
+    }
+    #equipment-list .cs-content {
+        text-align: left;
+        width: 100%;
+        max-width: 50rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #equipment-list .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+    }
+    #equipment-list .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #equipment-list .cs-card-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        gap: clamp(1rem, 2vw, 1.5rem);
+    }
+    #equipment-list .cs-card {
+        padding: clamp(1.25rem, 3vw, 1.75rem);
+        background-color: #f7f7f7;
+        border-radius: 1rem;
+        border: 1px solid #e8e8e8;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    #equipment-list .cs-label {
+        font-size: 0.8125rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0;
+        color: var(--primary);
+    }
+    #equipment-list .cs-h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin: 0;
+        color: var(--headerColor);
+    }
+    #equipment-list .cs-card-list {
+        padding-left: 1.25rem;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        color: var(--bodyTextColor);
+    }
+    #equipment-list .cs-card-list li {
+        line-height: 1.5em;
+        color: inherit;
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #equipment-list .cs-container {
+        gap: clamp(2.5rem, 4vw, 3.5rem);
+    }
+    #equipment-list .cs-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #equipment-list {
+        background-color: var(--dark);
+    }
+    body.dark-mode #equipment-list .cs-title,
+    body.dark-mode #equipment-list .cs-text,
+    body.dark-mode #equipment-list .cs-h3,
+    body.dark-mode #equipment-list .cs-card-list li {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #equipment-list .cs-card {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    body.dark-mode #equipment-list .cs-label {
+        color: var(--primaryLight);
+    }
+}
+
                                 
 hr {
     width: 100%

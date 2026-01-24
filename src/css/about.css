@@ -184,6 +184,89 @@
   }
 }
 /*-- -------------------------- -->
+<---     Iridium Advantage      -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+  #advantage {
+    padding: var(--sectionPadding);
+    background-color: #F7F7F7;
+  }
+  #advantage .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    text-align: center;
+  }
+  #advantage .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  #advantage .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    max-width: 45rem;
+    margin: 0 auto 2.5rem;
+    color: var(--headerColor);
+  }
+  #advantage .cs-card-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  #advantage .cs-card {
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+  }
+  #advantage .cs-card-title {
+    font-size: 1.25rem;
+    font-weight: 900;
+    margin: 0 0 0.75rem;
+    color: var(--headerColor);
+  }
+  #advantage .cs-card-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.6em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48em) {
+  #advantage .cs-card-group {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #advantage {
+    background-color: var(--dark);
+  }
+  body.dark-mode #advantage .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #advantage .cs-title,
+  body.dark-mode #advantage .cs-card-title,
+  body.dark-mode #advantage .cs-card-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #advantage .cs-card {
+    background-color: var(--accent);
+    border-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 12px 30px;
+  }
+}
+/*-- -------------------------- -->
 <---    Final Call To Action    -->
 <--- -------------------------- -*/
 /* Mobile */
