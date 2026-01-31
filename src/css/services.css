@@ -137,7 +137,7 @@
     }
     #content-page-1402 {
         padding: var(--sectionPadding);
-        background-color: #fff;
+        background-color: var(--bg);
         /* clips the wave background from causing overflow issues when it goes off screen */
         overflow: hidden;
         position: relative;
@@ -337,9 +337,9 @@
         padding: clamp(1rem, 3vw, 1.5rem);
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
-        background-color: #f7f7f7;
+        background-color: var(--bg-light);
         border-radius: 1rem;
-        border: 1px solid #e8e8e8;
+        border: 1px solid var(--border-muted);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -553,7 +553,7 @@
 @media only screen and (min-width: 0em) {
     #faq-254 {
         padding: var(--sectionPadding);
-        background: #fafbfc;
+        background: var(--bg-light);
     }
     #faq-254 .cs-container {
         width: 100%;
@@ -603,7 +603,7 @@
     }
     #faq-254 .cs-faq-item {
         list-style: none;
-        border-bottom: 1px solid #dad9e3;
+        border-bottom: 1px solid var(--border-muted);
         transition: border-bottom 0.3s;
     }
     #faq-254 .cs-faq-item.active {
@@ -693,6 +693,7 @@
         border-radius: 1rem;
         /* prevents padding from adding to width and height */
         box-sizing: border-box;
+        background-color: var(--bg);
     }
     #faq-254 .cs-h3 {
         /* 25px - 31px */
@@ -777,7 +778,7 @@
         background-color: transparent;
     }
     body.dark-mode #faq-254 .cs-topper {
-        color: var(--primaryLight);
+        color: var(--primary);
     }
     body.dark-mode #faq-254 .cs-title,
     body.dark-mode #faq-254 .cs-text {
@@ -793,6 +794,9 @@
     body.dark-mode #faq-254 .cs-h3,
     body.dark-mode #faq-254 .cs-item-p {
         color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #faq-254 .cs-cta {
+        background-color: var(--bg-light);
     }
 }
 /*-- -------------------------- -->
@@ -954,7 +958,7 @@
         color: var(--bodyTextColorWhite);
     }
     body.dark-mode #services-563 .cs-color {
-        color: var(--primaryLight);
+        color: var(--primary);
     }
     body.dark-mode #services-563 .cs-title,
     body.dark-mode #services-563 .cs-text,
@@ -978,7 +982,7 @@
 @media only screen and (min-width: 0rem) {
     #equipment-list {
         padding: var(--sectionPadding);
-        background-color: #fff;
+        background-color: var(--bg);
     }
     #equipment-list .cs-container {
         width: 100%;
@@ -1017,9 +1021,9 @@
     }
     #equipment-list .cs-card {
         padding: clamp(1.25rem, 3vw, 1.75rem);
-        background-color: #f7f7f7;
+        background-color: var(--bg-light);
         border-radius: 1rem;
-        border: 1px solid #e8e8e8;
+        border: 1px solid var(--border-muted);
         display: flex;
         flex-direction: column;
         gap: 0.75rem;
@@ -1078,7 +1082,7 @@
         border-color: rgba(255, 255, 255, 0.2);
     }
     body.dark-mode #equipment-list .cs-label {
-        color: var(--primaryLight);
+        color: var(--primary);
     }
 }
 

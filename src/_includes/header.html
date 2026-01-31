@@ -32,7 +32,7 @@
         {%- for entry in navPages %}
             <li class="{% if entry.title == 'Services' %}dropdown{% endif %}" id="{{ entry.title }}" >
                 {% if entry.title == 'Services' %}
-                    <a class="dropdown-toggle" role="button" tabindex="0">
+                    <a href="{{ entry.url }}" class="dropdown-toggle" role="button" tabindex="0">
                         {{ entry.title }}
                     </a>
                     <ul class="dropdown-menu">
@@ -41,7 +41,7 @@
                         <li><a href="/wire-edm/">Wire EDM</a></li>
                         <li><a href="/precision-grinding/">Precision Grinding</a></li>
                         <li><a href="/contract-manufacturing/">Contract Manufacturing</a></li>
-                        
+                        <li><a href="/waterjet-cutting/">Precision Waterjet Cutting</a></li>
                     </ul>
                 {% else %}
                     <a 

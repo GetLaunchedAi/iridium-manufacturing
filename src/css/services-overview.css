@@ -1,0 +1,301 @@
+/*-- -------------------------- -->
+<---        Banner Hero         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-hero {
+    padding: var(--sectionPadding);
+    padding-top: clamp(11.875rem, 25vw, 16.75rem);
+    padding-bottom: 6.25rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #services-hero .cs-container {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+  }
+  
+  #services-hero .cs-int-title {
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+  }
+  
+  #services-hero .cs-text {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  
+  #services-hero .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  #services-hero .cs-background:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  #services-hero .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/*-- -------------------------- -->
+<---      Services Cards        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-cards {
+    padding: var(--sectionPadding);
+    background-color: #fff;
+    position: relative;
+  }
+  
+  #services-cards .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  
+  #services-cards .cs-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  #services-cards .cs-topper {
+    width: 3rem;
+    height: 0.25rem;
+    background-color: var(--primary);
+    margin-bottom: 1rem;
+    display: block;
+    border-radius: 0.125rem;
+  }
+  
+  #services-cards .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 20ch;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+  
+  #services-cards .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 50rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  
+  #services-cards .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+  }
+  
+  #services-cards .cs-item {
+    list-style: none;
+    width: 100%;
+    height: clamp(20rem, 50vw, 26rem);
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    text-align: left;
+    box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+    grid-column: span 12;
+    z-index: 1;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
+  #services-cards .cs-item:hover .cs-picture::after {
+    opacity: 1;
+  }
+  
+  #services-cards .cs-item:hover .cs-picture img {
+    transform: scale(1.1);
+  }
+  
+  #services-cards .cs-item:hover .cs-h3 {
+    color: var(--primary);
+  }
+  
+  #services-cards .cs-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #services-cards .cs-link::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: background 0.3s;
+  }
+  
+  #services-cards .cs-link:hover::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+  }
+  
+  #services-cards .cs-h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    text-align: inherit;
+    margin: 0 0 0.75rem 0;
+    color: var(--bodyTextColorWhite);
+    transition: color 0.3s;
+  }
+  
+  #services-cards .cs-item-text {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    opacity: 0.9;
+  }
+  
+  #services-cards .cs-picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    overflow: hidden;
+  }
+  
+  #services-cards .cs-picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    mix-blend-mode: soft-light;
+    transition: opacity 0.3s;
+  }
+  
+  #services-cards .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.6s;
+  }
+}
+
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+  #services-cards .cs-item {
+    grid-column: span 6;
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #services-cards .cs-item {
+    grid-column: span 4;
+    height: clamp(22rem, 30vw, 28rem);
+  }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #services-cards {
+    background-color: var(--dark);
+  }
+  
+  body.dark-mode #services-cards .cs-title,
+  body.dark-mode #services-cards .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  
+  body.dark-mode #services-cards .cs-topper {
+    color: var(--primaryLight);
+  }
+  
+  body.dark-mode #services-cards .cs-item {
+    background-color: #1a1a1a;
+  }
+}
